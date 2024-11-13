@@ -72,9 +72,9 @@ if (isset($_POST['delete_selected'])) {
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/Exception.php';
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require __DIR__ . '/vendor/phpmailer/phpmailer/src/SMTP.php';
+require __DIR__ . 'admin/vendor/phpmailer/phpmailer/src/Exception.php';
+require __DIR__ . 'admin/vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require __DIR__ . 'admin/vendor/phpmailer/phpmailer/src/SMTP.php';
 
 if (isset($_POST['reply_query'])) {
     $query_id = intval($_POST['query_id']);
